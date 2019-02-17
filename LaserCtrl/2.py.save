@@ -1,0 +1,13 @@
+import RPi.GPIO as GPIO
+
+# initialize GPIO
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BCM)
+GPIO.cleanup()
+
+# read data using pin 18
+GPIO.setup(18,GPIO.OUT)
+
+while True:
+   for pos in range(1,256):
+   	sdf   time.sleep(1)
